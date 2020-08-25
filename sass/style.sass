@@ -1,0 +1,117 @@
+@import url(../fonts/fonts.css);
+@import url(media.min.css);
+
+
+*,*::before,*::after
+   box-sizing: border-box
+
+
+body
+	font-family: 'OpenSans', sans-serif
+	font-weight: normal
+	margin: 0
+
+h1,h2,h3,h4,h5,h6,p 
+	margin: 0
+	font-weight: normal
+
+ul
+	list-style: none
+	padding-left: 0
+	margin: 0
+
+a
+	text-decoration: none
+	color: #000
+
+img
+   max-width: 100%
+
+
+.container
+	padding: 0 15px
+	margin: 0 auto
+
+
+/*Start*/
+
+
+.wrapper
+	height: 100vh
+	width: 100%
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+
+.group-slider
+	height: 100vh
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	overflow: hidden
+
+
+.group__content
+	background-color: #fff
+	padding: 30px
+	position: relative
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	border-radius: 4px
+	// box-shadow: 0px 10px 35px 0px rgba(0,0,0,.8)
+@media screen and (max-height:330px)
+	.group__content
+		padding: 15px
+	
+
+.group__img
+	border: 6px solid #fff
+	border-radius: 50%
+	box-shadow: 0 0 2px 2px #daad86
+	width: 200px
+	height: 200px
+	overflow: hidden
+@media screen and (max-height: 470px)
+	.group__img
+		width: 130px
+		height: 130px
+
+.group__name
+	font-family: 'Montserrat'
+	font-size: 22px
+	text-transform: uppercase
+	letter-spacing: 4px
+	margin: 25px 0
+	text-align: center
+	& span
+		font-family: 'OpenSans'
+		font-size: 12px
+@media screen and (max-height: 470px)
+	.group__name
+		font-size: 16px
+		margin: 10px 0
+
+.group__link a
+   display: block
+   padding: 15px
+   background-color: #EE9A1E
+   border-radius: 4px
+   transition: .3s ease-out
+   &:hover
+      background-color: #D97402
+      box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75)
+      -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.75)
+@media screen and (max-height: 470px)
+	.group__link a
+		padding: 8px
+
+@media screen and (max-width: 576px)
+	.group__link
+		align-self: normal
+		text-align: center
+	
+.group-slider .owl-dot
+	outline: none
